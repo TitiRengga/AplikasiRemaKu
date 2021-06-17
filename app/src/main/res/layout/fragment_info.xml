@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_alignParentTop="true"
+        android:background="#E95B5B"
+        android:fontFamily="@font/roboto_light"
+        android:text="Info"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40dp" />
+
+    <ImageView
+        android:id="@+id/infoimage"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginTop="63dp"
+        android:background="#DF9A84"
+        android:src="@drawable/_3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="498dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="337dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="270dp"
+        android:fontFamily="@font/roboto_medium_italic"
+        android:text="RemaKu adalah singkatan dari Aplikasi Resep Masakan Ku. Aplikasi ini menyediakan berbagai macam resep mulai dari makanan berat sampai dengan cemilan. Tidak hanya makanan tetapi tersedia juga resep minuman unik dan menarik."
+        android:textAlignment="center"
+        android:textColor="#E95B5B"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginBottom="200dp"
+        android:fontFamily="@font/roboto_medium_italic"
+        android:text="Anggota Tim"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="540dp"
+        android:background="#DF9A84" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="168dp"
+        android:layout_height="219dp"
+        android:translationX="20dp"
+        android:translationY="535dp"
+        app:srcCompat="@drawable/titi_fix" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="163dp"
+        android:layout_height="212dp"
+        android:translationX="200dp"
+        android:translationY="540dp"
+        app:srcCompat="@drawable/fix_husnul" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium_italic"
+        android:text="TITI RENGGA SARI"
+        android:textColor="#FFFFFF"
+        android:translationX="35dp"
+        android:translationY="730dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium_italic"
+        android:text="HUSNUL SAUSAN"
+        android:textColor="#FFFFFF"
+        android:translationX="230dp"
+        android:translationY="730dp" />
+
+
+</RelativeLayout>
