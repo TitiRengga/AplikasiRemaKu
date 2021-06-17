@@ -31,12 +31,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="20dp"
             android:layout_toStartOf="@id/icon_list"
+            android:fontFamily="@font/roboto_medium_italic"
             android:gravity="start"
             android:textAppearance="?attr/textAppearanceListItem"
-            android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textColor="#E95B5B"
+            android:textSize="24sp" />
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
