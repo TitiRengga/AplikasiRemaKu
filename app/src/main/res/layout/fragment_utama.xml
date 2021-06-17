@@ -8,6 +8,7 @@
     android:background="#FDFDFD">
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="412dp"
         android:layout_height="724dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,6 +58,86 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView2">
 
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/RendangDaging"
+                                android:layout_width="131dp"
+                                android:layout_height="70dp"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:radius="20dp"
+                                android:rotationX="-13"
+                                android:src="@drawable/rendang"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                            <TextView
+                                android:id="@+id/Daging"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rendang Daging"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:textStyle="bold"
+                                app:backgroundTint="#0FF44336" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="30dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/tteokboki"
+                                android:layout_width="131dp"
+                                android:layout_height="70dp"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:radius="20dp"
+                                android:rotationX="-13"
+                                android:src="@drawable/tteokbokki"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                            <TextView
+                                android:layout_width="111dp"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:text="Tteokbokki"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
             </SearchView>
 
             <TextView
@@ -170,61 +251,50 @@
     </ScrollView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="410dp"
-        android:layout_height="359dp"
-        tools:layout_editor_absoluteY="372dp">
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto_medium_italic"
-            android:text="KATEGORI"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="20dp"
-            tools:layout_editor_absoluteY="31dp" />
+        android:layout_width="418dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <LinearLayout
-            android:id="@+id/linearLayout"
+            android:id="@+id/Layout4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView3">
+            app:layout_constraintTop_toTopOf="parent">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp">
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="20dp"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/Indonesia"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_marginStart="20dp"
+                        android:id="@+id/bubbletea"
+                        android:layout_width="131dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="0dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
-                        android:background="@drawable/category_background1"
-                        android:src="@drawable/nasi"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
+                        android:radius="20dp"
+                        android:rotationX="-13"
+                        android:src="@drawable/sop"
                         app:layout_constraintVertical_bias="0.0" />
 
                     <TextView
-                        android:id="@+id/BTop1"
-                        android:layout_width="129dp"
-                        android:layout_height="70dp"
-                        android:text="Masakan Indonesia"
+                        android:id="@+id/textBubble"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="Bubble Tea"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="16dp"
@@ -237,7 +307,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp">
+                android:layout_marginStart="0dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -246,26 +316,22 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/Cemilan"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_marginStart="20dp"
+                        android:id="@+id/sopBuah"
+                        android:layout_width="131dp"
+                        android:layout_height="90dp"
+                        android:layout_marginStart="0dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
-                        android:background="@drawable/category_background2"
-                        android:src="@drawable/cemilan"
-                        android:textAlignment="center"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
+                        android:radius="20dp"
+                        android:rotationX="-13"
+                        android:src="@drawable/buah"
                         app:layout_constraintVertical_bias="0.0" />
 
                     <TextView
-                        android:layout_width="108dp"
-                        android:layout_height="63dp"
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
                         android:background="@color/white"
-                        android:text="Masakan Luar Negeri"
+                        android:text="Sop Buah"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="16dp"
@@ -275,5 +341,114 @@
             </androidx.cardview.widget.CardView>
 
         </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="418dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="390dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="186dp"
+            android:fontFamily="@font/roboto_medium_italic"
+            android:text="RESEP MASAKAN TERPOPULER"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView8">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/RendangDaging"
+                        android:layout_width="131dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:radius="20dp"
+                        android:rotationX="-13"
+                        android:src="@drawable/rendang"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/Daging"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rendang Daging"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        app:backgroundTint="#0FF44336" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/tteokbokki"
+                        android:layout_width="131dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:radius="20dp"
+                        android:rotationX="-13"
+                        android:src="@drawable/tteokbokki"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:layout_width="111dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="Tteokbokki"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

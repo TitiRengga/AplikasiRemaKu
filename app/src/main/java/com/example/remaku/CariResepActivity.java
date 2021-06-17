@@ -1,25 +1,36 @@
 package com.example.remaku;
 
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Activity;
+import android.graphics.Color;
+import android.os.Build;
+import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+
+import com.example.remaku.DataAdapter;
+import com.example.remaku.DataModel;
+import com.example.remaku.R;
+
 import java.util.ArrayList;
 
-public class CariResepFragment extends Fragment {
+public class CariResepActivity extends AppCompatActivity {
+
     public DataAdapter dataAdapter;
     public RecyclerView recyclerView;
     public ArrayList dataModelArrayList = new ArrayList();
 
-    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_cariresep);
+
+        //membuat data yang akan ditampilkan dalam list
+        //file .html mengambil di folder assets
         inputData("Ayam Bakar Bumbu Bali", "artikel_1.html");
         inputData("Sate Ayam Srepeh", "artikel_2.html");
         inputData("Pizza Sosis Jumbo (Tanpa Ulen)", "artikel_3.html");
@@ -35,17 +46,23 @@ public class CariResepFragment extends Fragment {
         inputData("Pisang Bakar Coklat Keju", "artikel_13.html");
         inputData("Keto Martabak Terang Bulan", "artikel_14.html");
         inputData("Ingkung Ayam Kampung", "artikel_15.html");
+
         //menampilkan data ke dalam recyclerView
-        View view = inflater.inflate(R.layout.activity_cariresep, container, false);
-        recyclerView = view.findViewById(R.id.recyclerView);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+        recyclerView = findViewById(R.id.recyclerView);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
-        dataAdapter = new DataAdapter(getActivity(), dataModelArrayList);
+        dataAdapter = new DataAdapter(this, dataModelArrayList);
         recyclerView.setAdapter(dataAdapter);
-        return view;
+
+        /*//menambahakan header
+        DataModel headerModel = new DataModel();
+        headerModel.setViewType(2);
+        dataModelArrayList.add(0, headerModel);*/
+
     }
 
+    //fungsi input
     public void inputData(String judul, String konten) {
         DataModel dataModel = new DataModel();
         dataModel.setJudul(judul);
@@ -54,5 +71,15 @@ public class CariResepFragment extends Fragment {
         dataModelArrayList.add(dataModel);
     }
 
+    public static void setWindowFlag(Activity activity, final int bits, boolean on) {
+        Window win = activity.getWindow();
+        WindowManager.LayoutParams winParams = win.getAttributes();
+        if (on) {
+            winParams.flags |= bits;
+        } else {
+            winParams.flags &= ~bits;
+        }
+        win.setAttributes(winParams);
+    }
 
 }
